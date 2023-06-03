@@ -1,0 +1,54 @@
+body {
+  background-color: #272727;
+}
+
+header {
+  flex: 1;
+  height: 5rem;
+  background-color: #dd592f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+header a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.pagination a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+}
