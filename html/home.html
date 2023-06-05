@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <script defer src="../js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/global.css" />
@@ -16,10 +17,88 @@
     </header>
     <main>
       <nav class="pagination">
-        <a>Minhas partidas</a>
-        <a>Partidas públicas</a>
-        <a>Quadras</a>
+        <a id="my-matches" class="selected">Minhas partidas</a>
+        <a id="public-matches">Partidas públicas</a>
+        <a id="courts">Quadras</a>
       </nav>
+      <section class="contentList">
+        <h2>Futuras</h2>
+        <ul>
+          <li>
+            <div class="statusContainer">
+              <i height="2.5rem" width="2.5rem" data-feather="check-circle"></i>
+              <span>Confirmado</span>
+            </div>
+            <div class="infoContainer">
+              <div class="row">
+                <h3>Rachão dos brother</h3>
+                <div class="iconRow">
+                  <i height="1.5rem" width="1.5rem" data-feather="calendar"></i>
+                  <p>25/05</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="iconRow">
+                  <i height="1.5rem" width="1.5rem" data-feather="map-pin"></i>
+                  <p>Ginásio da PUCPR</p>
+                </div>
+                <div class="iconRow">
+                  <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
+                  <p>19:00 - 20:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="redirectContainer">
+              <p>10/10</p>
+              <i height="2rem" width="2rem" data-feather="user"></i>
+              <i height="2.5rem" width="2.5rem" data-feather="arrow-right"></i>
+            </div>
+          </li>
+          <li>
+            <div class="statusContainer">
+              <i height="2.5rem" width="2.5rem" data-feather="loader"></i>
+              <span>Não confirmado</span>
+            </div>
+            <div class="infoContainer">
+              <div class="row">
+                <h3>Treino Cestou</h3>
+                <div class="iconRow">
+                  <i height="1.5rem" width="1.5rem" data-feather="calendar"></i>
+                  <p>30/05</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="iconRow">
+                  <i height="1.5rem" width="1.5rem" data-feather="map-pin"></i>
+                  <p>Ginásio da PUCPR</p>
+                </div>
+                <div class="iconRow">
+                  <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
+                  <p>14:00 - 15:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="redirectContainer">
+              <p>07/10</p>
+              <i height="2rem" width="2rem" data-feather="user"></i>
+              <i height="2.5rem" width="2.5rem" data-feather="arrow-right"></i>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="contentList">
+        <h2>Passadas</h2>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
     </main>
+    <script>
+      feather.replace({
+        color: "#FFF",
+        "stroke-width": 2,
+      });
+    </script>
   </body>
 </html>

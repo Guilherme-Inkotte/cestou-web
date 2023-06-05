@@ -33,6 +33,7 @@ main {
   display: flex;
   flex: 1;
   padding: 2rem;
+  flex-direction: column;
 }
 
 .pagination {
@@ -45,10 +46,109 @@ main {
 
 .pagination a {
   font-size: 1.5rem;
+  color: #555;
+  font-family: sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+  width: 20ch;
+  text-align: center;
+}
+
+.pagination .selected {
+  color: #fff;
+  border-color: #fff;
+  cursor: default;
+}
+
+.contentList {
+  margin-top: 2.5rem;
+}
+
+.contentList h2 {
+  font-size: 2rem;
   color: #fff;
   font-family: sans-serif;
-  margin-left: 1.5rem;
-  cursor: pointer;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contentList li {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 8rem;
+  background-color: #565656;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 1.5rem;
+}
+
+.statusContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20ch;
+  /* background-color: #A8A8A8; */
+}
+
+.statusContainer span {
+  font-size: 1rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.infoContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.infoContainer h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  flex: 1;
+}
+
+.infoContainer p {
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.infoContainer .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoContainer .iconRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+
+.redirectContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.redirectContainer p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-right: 0.5rem;
 }
