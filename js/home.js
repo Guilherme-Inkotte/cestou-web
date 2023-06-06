@@ -22,3 +22,4 @@ courtsButton.addEventListener("click", (e) => {
   publicMatchesButton.classList.remove("selected");
   courtsButton.classList.add("selected");
 });
+
