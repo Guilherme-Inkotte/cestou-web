@@ -1,10 +1,9 @@
-*{
-  font-family: 'Roboto', sans-serif;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: #272727;
-  
 }
 
 header {
@@ -67,6 +66,10 @@ main {
   cursor: default;
 }
 
+.hidden {
+  display: none;
+}
+
 .contentList {
   margin-top: 2.5rem;
 }
@@ -107,6 +110,12 @@ main {
   margin-top: 0.5rem;
 }
 
+.statusContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .infoContainer {
   display: flex;
   flex: 1;
@@ -120,7 +129,8 @@ main {
   color: #fff;
   font-family: sans-serif;
   font-weight: bold;
-  flex: 1;
+  min-width: 15rem;
+  margin-right: 3rem;
 }
 
 .infoContainer p {
@@ -141,7 +151,8 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 1;
+  min-width: 15rem;
+  margin-right: 3rem;
 }
 
 .redirectContainer {

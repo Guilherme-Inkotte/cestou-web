@@ -6,8 +6,11 @@
     <script defer src="../js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/global.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -19,82 +22,248 @@
     </header>
     <main>
       <nav class="pagination">
-        <a id="my-matches" class="selected">Minhas partidas</a>
-        <a id="public-matches">Partidas públicas</a>
-        <a id="courts">Quadras</a>
+        <a id="my-matches-button" class="selected">Minhas partidas</a>
+        <a id="public-matches-button">Partidas públicas</a>
+        <a id="courts-button">Quadras</a>
       </nav>
-      <section class="contentList">
-        <h2>Futuras</h2>
-        <ul>
-          <li>
-            <div class="statusContainer">
-              <i height="2.5rem" width="2.5rem" data-feather="check-circle"></i>
-              <span>Confirmado</span>
-            </div>
-            <div class="infoContainer">
-              <div class="row">
-                <h3>Rachão dos brother</h3>
-                <div class="iconRow">
-                  <i height="1.5rem" width="1.5rem" data-feather="calendar"></i>
-                  <p>25/05</p>
+      <div id="my-matches">
+        <section class="contentList">
+          <h2>Futuras</h2>
+          <ul>
+            <li>
+              <div class="statusContainer">
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="check-circle"
+                ></i>
+                <span>Confirmado</span>
+              </div>
+              <div class="infoContainer">
+                <div class="row">
+                  <h3>Rachão dos brother</h3>
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="calendar"
+                    ></i>
+                    <p>25/05</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="map-pin"
+                    ></i>
+                    <p>Ginásio da PUCPR</p>
+                  </div>
+                  <div class="iconRow">
+                    <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
+                    <p>19:00 - 20:00</p>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="iconRow">
-                  <i height="1.5rem" width="1.5rem" data-feather="map-pin"></i>
-                  <p>Ginásio da PUCPR</p>
+              <div class="redirectContainer">
+                <p>10/10</p>
+                <i height="2rem" width="2rem" data-feather="user"></i>
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="arrow-right"
+                  style="cursor: pointer; margin-left: 1.5rem"
+                ></i>
+              </div>
+            </li>
+            <li>
+              <div class="statusContainer">
+                <i height="2.5rem" width="2.5rem" data-feather="loader"></i>
+                <span>Não confirmado</span>
+              </div>
+              <div class="infoContainer">
+                <div class="row">
+                  <h3>Treino Cestou</h3>
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="calendar"
+                    ></i>
+                    <p>30/05</p>
+                  </div>
                 </div>
-                <div class="iconRow">
-                  <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
-                  <p>19:00 - 20:00</p>
+                <div class="row">
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="map-pin"
+                    ></i>
+                    <p>Ginásio da PUCPR</p>
+                  </div>
+                  <div class="iconRow">
+                    <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
+                    <p>14:00 - 15:00</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="redirectContainer">
-              <p>10/10</p>
-              <i height="2rem" width="2rem" data-feather="user"></i>
-              <i height="2.5rem" width="2.5rem" data-feather="arrow-right" style="cursor: pointer;"></i>
-            </div>
-          </li>
-          <li>
-            <div class="statusContainer">
-              <i height="2.5rem" width="2.5rem" data-feather="loader"></i>
-              <span>Não confirmado</span>
-            </div>
-            <div class="infoContainer">
-              <div class="row">
-                <h3>Treino Cestou</h3>
-                <div class="iconRow">
-                  <i height="1.5rem" width="1.5rem" data-feather="calendar"></i>
-                  <p>30/05</p>
+              <div class="redirectContainer">
+                <p>07/10</p>
+                <i height="2rem" width="2rem" data-feather="user"></i>
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="arrow-right"
+                  style="cursor: pointer; margin-left: 1.5rem"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="contentList">
+          <h2>Passadas</h2>
+          <ul>
+            <li>
+              <div class="statusContainer">
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="check-circle"
+                ></i>
+                <span>Participou</span>
+              </div>
+              <div class="infoContainer">
+                <div class="row">
+                  <h3>Treino Cestou</h3>
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="calendar"
+                    ></i>
+                    <p>23/05</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="map-pin"
+                    ></i>
+                    <p>Ginásio da PUCPR</p>
+                  </div>
+                  <div class="iconRow">
+                    <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
+                    <p>14:00 - 15:00</p>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="iconRow">
-                  <i height="1.5rem" width="1.5rem" data-feather="map-pin"></i>
-                  <p>Ginásio da PUCPR</p>
+              <div class="redirectContainer">
+                <p>+3</p>
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="arrow-right"
+                  style="cursor: pointer; margin-left: 1.5rem"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="public-matches" class="hidden">
+        <section class="contentList">
+          <ul>
+            <li>
+              <div class="statusContainer">
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="check-circle"
+                ></i>
+                <span>Confirmado</span>
+              </div>
+              <div class="infoContainer">
+                <div class="row">
+                  <h3>Rachão dos brother</h3>
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="calendar"
+                    ></i>
+                    <p>25/05</p>
+                  </div>
                 </div>
-                <div class="iconRow">
-                  <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
-                  <p>14:00 - 15:00</p>
+                <div class="row">
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="map-pin"
+                    ></i>
+                    <p>Ginásio da PUCPR</p>
+                  </div>
+                  <div class="iconRow">
+                    <i height="1.5rem" width="1.5rem" data-feather="clock"></i>
+                    <p>19:00 - 20:00</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="redirectContainer">
-              <p>07/10</p>
-              <i height="2rem" width="2rem" data-feather="user"></i>
-              <i height="2.5rem" width="2.5rem" data-feather="arrow-right" style="cursor: pointer;"></i>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="contentList">
-        <h2>Passadas</h2>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+              <div class="redirectContainer">
+                <p>08/10</p>
+                <i height="2rem" width="2rem" data-feather="user"></i>
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="arrow-right"
+                  style="cursor: pointer; margin-left: 1.5rem"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="courts" class="hidden">
+        <section class="contentList">
+          <ul>
+            <li>
+              <div class="statusContainer">
+                <img
+                  src="data:image/jpeg;base64,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"
+                />
+              </div>
+              <div class="infoContainer">
+                <div class="row">
+                  <h3>Ginásio da PUCPR</h3>
+                </div>
+                <div class="row">
+                  <div class="iconRow">
+                    <i
+                      height="1.5rem"
+                      width="1.5rem"
+                      data-feather="map-pin"
+                    ></i>
+                    <p>Parolin, Curitiba - 4,9 Km</p>
+                  </div>
+                  <p>Piso de concreto</p>
+                </div>
+              </div>
+              <div class="redirectContainer">
+                <i
+                  height="2.5rem"
+                  width="2.5rem"
+                  data-feather="arrow-right"
+                  style="cursor: pointer; margin-left: 1.5rem"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <script>
       feather.replace({
