@@ -11,6 +11,10 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--negative);
 }
@@ -30,7 +34,6 @@ header {
   display: flex;
   align-items: center;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .logoRow img {
@@ -52,7 +55,6 @@ header nav a {
   color: var(--positive);
   margin-left: 1.5rem;
   cursor: pointer;
-  text-decoration: none;
 }
 
 main {
@@ -216,12 +218,57 @@ main {
   align-items: center;
 }
 
-.infoContainer .iconRow {
+.iconRow {
   display: flex;
   flex-direction: row;
   align-items: center;
   min-width: 15rem;
   margin-right: 3rem;
+}
+
+.iconRow p {
+  margin-left: 0.5rem;
+}
+
+.playerContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.playerContainer p {
+  font-size: 1.5rem;
+  color: var(--positive);
+}
+
+.playerContainer .playerName {
+  flex: 1;
+}
+
+.playerContainer .space {
+  flex: 1;
+}
+
+.statsLabel {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin: 0 36.7% 0 37.7%;
+  margin-bottom: 1rem;
+}
+
+.statsLabel p {
+  font-size: 1.5rem;
+  color: var(--positive);
+}
+
+.statsRow {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .redirectContainer {
