@@ -1,0 +1,21 @@
+:root {
+  --primary: #dd592f;
+  --positive: #ffffff;
+  --negative: #272727;
+  --disabled: #555555;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: .5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: var(--positive);
+  font-weight: 300;
+}
