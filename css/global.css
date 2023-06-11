@@ -275,6 +275,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 
 .redirectContainer p {
