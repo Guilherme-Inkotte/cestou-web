@@ -6,7 +6,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/cestou.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/signUp.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,21 +20,83 @@
     <main>
       <div class="container">
         <form action="">
-          <label for="name">Altura (cm)</label>
-          <p><input class="input" type="text" placeholder="Altura" /></p>
-          <label for="name">Peso (kg)</label>
-          <p><input class="input" type="text" placeholder="Peso" /></p>
-          <label for="name">Mão predominante</label>
+          <label for="height">Altura (cm)</label>
+          <p>
+            <input id="height" class="input" type="text" placeholder="Altura" />
+          </p>
+          <label for="weight">Peso (kg)</label>
+          <p>
+            <input id="weight" class="input" type="text" placeholder="Peso" />
+          </p>
+          <label>Mão predominante</label>
           <br />
-          <input type="radio" value="Esquerda" class="radio" />
-          <label for="html">Esquerda</label><br />
-          <input type="radio" value="Direita" class="radio" />
-          <label for="css">Direita</label><br />
-          <input type="radio" value="Ambidestro" class="radio" />
-          <label for="javascript">Ambidestro</label>
+          <input
+            name="hand"
+            id="left"
+            type="radio"
+            value="Esquerda"
+            class="radio"
+          />
+          <label for="left">Esquerda</label><br />
+          <input
+            name="hand"
+            id="right"
+            type="radio"
+            value="Direita"
+            class="radio"
+          />
+          <label for="right">Direita</label><br />
+          <input
+            name="hand"
+            id="both"
+            type="radio"
+            value="Ambidestro"
+            class="radio"
+          />
+          <label for="both">Ambidestro</label>
           <br />
-          <label for="name">Posição preferida</label>
-          <p><input type="text" placeholder="Peso" /></p>
+          <label>Posições preferidas</label>
+          <br />
+          <input
+            name="position"
+            id="c"
+            type="checkbox"
+            value="c"
+            class="checkbox"
+          />
+          <label for="c">Pivô (C)</label><br />
+          <input
+            name="position"
+            id="sf"
+            type="checkbox"
+            value="sf"
+            class="checkbox"
+          />
+          <label for="sf">Ala (SF)</label><br />
+          <input
+            name="position"
+            id="sg"
+            type="checkbox"
+            value="sg"
+            class="checkbox"
+          />
+          <label for="sg">Ala-armador (SG)</label><br />
+          <input
+            name="position"
+            id="pf"
+            type="checkbox"
+            value="pf"
+            class="checkbox"
+          />
+          <label for="pf">Ala-Pivô (PF)</label><br />
+          <input
+            name="position"
+            id="pg"
+            type="checkbox"
+            value="pg"
+            class="checkbox"
+          />
+          <label for="pg">Armador (PG)</label><br />
           <label for="name">Time do coração (opcional)</label>
           <p>
             <input class="input" type="text" placeholder="Time do coração" />
@@ -41,7 +104,7 @@
         </form>
       </div>
       <div class="container" id="">
-        <a href="signUp2.html"
+        <a href="./home.html"
           ><button class="butao" style="margin-top: 33px">Próximo</button></a
         >
       </div>

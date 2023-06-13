@@ -1,63 +1,90 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    
+:root {
+  --primary: #dd592f;
+  --primary-highlight: #cc481e;
+  --positive: #ffffff;
+  --negative: #272727;
+  --disabled: #555555;
 }
-html{
-    height: 100%;
-    width: 100%;
-}
-body{
-    background-color: rgb(43, 43, 43);
-    background-image: linear-gradient(45deg, black, rgba(255, 121, 31, 0.9));
-    
-}
-.butao{
-    border-radius: 10px;
-    width: 42%;
-    height: 50px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    margin: 15px 0px;
-    text-decoration: none;
-    text-align: center;
-    text-justify: auto;
-    
-}
-#logar{
-    background-color: black;
-    
-}
-#cadastrar{
-    background-color: rgb(255, 111, 0);
 
+*,
+a,
+p {
+  color: var(--positive);
+  font-family: "Roboto", sans-serif;
 }
-#logar:hover{
-    background-color: rgba(65, 65, 65, 0.365);
-    cursor: pointer;
+
+html {
+  height: 100%;
+  width: 100%;
 }
-#cadastrar:hover{
-    background-color: rgb(255, 137, 46);
-    cursor: pointer;
+
+body {
+  background-color: var(--negative);
+  /* background-image: url("https://pbs.twimg.com/media/FsbmZDTaYAENTFr.jpg:large");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: right;
+  background-blend-mode:difference; */
 }
-.container{
-    display: flex;
-    margin: 50px ; 
-    
-    flex-direction: column;
+
+.butao {
+  border-radius: 0.35rem;
+  width: 35%;
+  line-height: 3.5rem;
+  border: none;
+  color: var(--positive);
+  font-weight: bold;
+  margin: 15px 0px;
+  text-decoration: none;
+  text-align: center;
+  text-justify: auto;
+  cursor: pointer;
 }
-.initial{
-    margin: 70px 30px 0px 50px;
-    width: 60%;
-    
+
+#logar {
+  border: 2px solid var(--positive);
 }
-.initial p{
-    margin: 30px 0px;
+
+#cadastrar {
+  background-color: var(--primary);
 }
-.initial h1{
-    font-size: 4vw;
+
+#logar:hover {
+  border-color: var(--disabled);
+}
+
+#cadastrar:hover {
+  background-color: var(--primary-highlight);
+}
+
+.container {
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+}
+
+.initial {
+  margin: 70px 30px 0px 50px;
+  width: 45%;
+}
+
+.initial p {
+  margin: 30px 0px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.initial h1 {
+  font-size: 5rem;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 75%;
+  object-fit: cover;
 }
